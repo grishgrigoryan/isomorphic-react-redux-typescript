@@ -1,0 +1,8 @@
+//just for intellij IDEA (it cries on autocompletion without this)
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "ES5",
+    "experimentalDecorators": true
+  }
+}
