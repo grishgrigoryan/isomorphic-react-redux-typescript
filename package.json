@@ -1,12 +1,11 @@
 {
-  "name": "react-tsx-starter",
+  "name": "isomorphic-react-redux-typescript",
   "version": "0.0.1",
   "description": "Isomorphic React TypeScript Project",
   "author": {
     "name": "G.Grigoryan",
     "email": "grishgirogyrna@gmail.com"
   },
-  "browserify-shim": {},
   "scripts": {
     "start-dev": "NODE_ENV=development nodemon --watch src/common --watch src/server -e ts,tsx  --delay 2 ./bin/www",
     "start": "node ./bin/www"
