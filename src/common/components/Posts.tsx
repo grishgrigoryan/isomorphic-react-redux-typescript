@@ -1,18 +1,13 @@
 import * as React from 'react';
 import * as PostActions       from '../actions/PostActions';
-import Post       from './Post';
+import Post       from  './Post';
 import { connect }            from 'react-redux';
 import { actions }            from '../utils/Decorators';
 
 
-
-export interface PostsProp {
-    posts: any[];
-    dispatch : any
-}
-@connect((state,ownProp)  => {return {posts: state.posts} })
+@connect(state => ({ posts: state.posts }))
 @actions([PostActions.fetchPosts])
-export default class Posts extends React.Component<PostsProp,any> {
+export default class Posts extends React.Component<any,any> {
     render() {
         const { posts, dispatch } = this.props;
         if(typeof  window!=="undefined"){

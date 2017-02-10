@@ -1,7 +1,6 @@
 import {FETCH_POST} from '../actions/Consts'
-import * as Immutable from 'immutable';
 
-const defaultState =  Immutable.List.of();
+const defaultState =  [];
 
 export default function postReducer(state = defaultState, action) {
     switch(action.type) {
